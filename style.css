@@ -74,6 +74,127 @@ select {
   }
 }
 
-/* font-family: 'Red Hat Display', sans-serif; */
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
 
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
 
+    --mouseover: hsl(245, 60%, 60%);
+}
+
+body{
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    color: var(--desaturated-blue);
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 95%;
+    max-width: 400px;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-hero img{
+    border-radius: 20px 20px 0 0;
+}
+
+.info-section p{
+    margin: 1.5rem auto;    
+    width: 25ch;
+    text-align: center;
+}
+
+.plan-section{
+    margin-inline: auto;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 20px;
+}
+
+.plan-section-change{
+    color: var(--bright-blue);
+    font-weight: 700;
+    padding-left: 2.5rem;
+    font-size: .9rem;
+    transition: all 0.2s ease-in;
+}
+
+.plan-section-change:hover{
+    text-decoration: none;
+    color: var(--mouseover);
+}
+
+.order button{
+    width: 85%;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    color: white;
+    background-color: var(--bright-blue);
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.order button:hover{
+    background-color: var(--mouseover);
+}
+
+.order p{
+
+    width: 50%;
+    margin: 0 auto 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.order p:hover{
+    color: black;
+}
+
+.attribution{
+    margin: 0 auto 2rem;
+    font-size: .8rem;
+    color: var(--desaturated-blue);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    transition: all 0.2s ease-in;
+}
+
+.attribution a:hover{
+    color: var(--mouseover);
+}
